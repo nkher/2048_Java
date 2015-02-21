@@ -8,18 +8,23 @@ the GameContainer (Main Game board) and Block (Tiles) as the blocks in them. Oth
 or helper classes. Appropriate methods and instance variables have been given to each of the classes and the naming 
 is self explanatory, however suggestions are welcome.
 
-System Requirements :  Java SE 1.7
+System Requirements :  Java SE 1.7, Apache Maven
 
 How tu run ?
 -------------
 
-There are two ways to run the code.
-1. The whole project can be downloaded as a project and can be imported into ecplise ide. Run the GameStarted class.
-2. Download all the .class and .java (source) files from the src and bin folders and put them in a single folder 
-   on your machine (any name). Use the command line if Windows or the Terminal if Mac to got in to the directory where 
-   all your files are stored and run the following command.   
-   
-   Command to be run : java GameStarter 
+Step 1: Clone the project into a directory on your computer (any directory) using :
+
+git clone https://github.com/nkher/2048_Java.git
+
+Step 2: Run the following command 
+
+mvn clean package 
+
+Step 3:Run the starter class using the following command
+
+mvn exec:java -Dexec.mainClass=nkher.Twenty_Forty_Eight_Java.GameStarter
+
 
 Enjoy !
 
